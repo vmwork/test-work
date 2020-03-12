@@ -237,11 +237,14 @@ button:focus {
 
 .main-header__main-nav{
 	max-width: 1920px;
+	min-width: 1200px;
 	margin: 0 auto;
+		margin-top: 5px;
 	min-height: 55px;
 	background-color: #2e2e2e;
 }
 .main-nav__list{
+
 	list-style: none;
 	display: flex;
 	width: 922px;

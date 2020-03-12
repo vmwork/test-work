@@ -63,3 +63,57 @@ background-position: 50% 50%;
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
 }
+.about-company__main{
+	
+	max-width: 1150px;
+	margin: 0 auto;
+	padding-top: 54px;
+	text-align: center;
+	font-size: 18px;
+}
+.about-company__main-container{
+	margin-top: 45px;
+	display: flex;
+}
+.about-company__main-container-company,
+.about-company__main-container-reviews,
+.about-company__main-container-social{
+	position: relative;
+	width: 380px;
+	height: 175px;
+	border: 1px solid #f0f0f0;
+	padding-top: 108px;
+	font-size: 16px;
+	font-weight: 300;
+}
+.about-company__main-container-company:before,
+.about-company__main-container-reviews:before,
+.about-company__main-container-social:before{
+	position: absolute;
+	content: "";
+
+	
+	z-index: 10;
+}
+.about-company__main-container-company:before{
+	background-image: url(..//img/files-and-folders.svg);
+top: 47px;
+	width:46px;
+	height: 46px;
+	right: 160px;
+}
+.about-company__main-container-reviews:before{
+	background-image: url(..//img/review.svg);
+		top: 52px;
+	width:46px;
+	height: 34px;
+	right: 160px;
+}
+.about-company__main-container-social:before{
+		background-image: url(..//img/care-about-environment.svg);
+			top: 45px;
+			right: 155px;
+	width:50px;
+	height: 46px;
+
+}
