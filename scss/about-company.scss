@@ -1,0 +1,65 @@
+.about-company{
+	width: 100%;
+	margin-top: 60px;
+
+}
+.about-company__do{
+	width: 1200px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+.about-company__do-lern,
+.about-company__do-investing,
+.about-company__do-work{
+	position: relative;
+	width: 383px;
+	height: 243px;
+	color: #ffffff;
+	text-transform: uppercase;
+	font-size: 27px;
+
+}
+.about-company__do-lern{
+	background-image: url(../img/lern.jpg);
+		padding-top: 147px;
+	padding-left: 125px;
+}
+.about-company__do-investing{
+background-image: url(../img/investing.jpg);
+		padding-top: 147px;
+		padding-left: 60px;
+}
+.about-company__do-work{
+	background-image: url(../img/work.jpg);
+			padding-top: 147px;
+			padding-left: 118px;
+}
+.about-company__do-lern:after,
+.about-company__do-investing:after,
+.about-company__do-work:after{
+	position: absolute;
+	content: "";
+	width: 66px;
+	height: 66px;
+	background-color: #ffffff;
+	border-radius: 50%;
+	top: 65px;
+	right: 155px;
+	z-index: 10;
+}
+.about-company__do-lern:after{
+	background-image: url(..//img/book.svg);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+.about-company__do-investing:after{
+background-image: url(..//img/cash.svg);
+background-repeat: no-repeat;
+background-position: 50% 50%;
+}
+.about-company__do-work:after{
+	background-image: url(..//img/work.svg);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
