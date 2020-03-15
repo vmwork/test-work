@@ -1,6 +1,6 @@
 .gallery{
   max-width: 1920px;
-  min-width: 1200px;
+  min-width: 768px;
   margin: 0 auto;
   overflow: hidden;
   }
@@ -39,6 +39,8 @@
      .gallery-slider__control_prev {
       left: 360px;
       bottom: 39px;
+      width: 40px;
+      height: 40px;
       border: 1px solid #ffffff;
       border-radius: 50%;
     }
@@ -48,6 +50,8 @@
       bottom: 39px;
        border: 1px solid #ffffff;
       border-radius: 50%;
+      width: 40px;
+      height: 40px;
     }
 
     .gallery-slider__control::before {
@@ -145,11 +149,12 @@
     .gallery-slider__item:after{
       position: absolute;
       content: "";
-      width: 189px;
-      height: 159px;
+      width: 225px;
+      height: 191px;
       bottom: 60px;
-      left: 675px;
+      left: 720px;
       background-image: url(../img/Логотип2.svg);
+      background-size: 100%;
 
 
     }
@@ -190,4 +195,48 @@ margin-left: 3px;
 }
 .gallery-slider__item_2-button{
   margin-top: 38px;
+}
+@media screen and (max-width:1200px){
+  .gallery-slider__item{
+    padding-left: 50px;
+    color: #000;
+  }
+   .gallery-slider__control_prev {
+      left: 60px;
+      bottom: 39px;
+      border: 1px solid #ffffff;
+      border-radius: 50%;
+    }
+
+    .gallery-slider__control_next {
+      left: 119px;
+      bottom: 39px;
+       border: 1px solid #ffffff;
+      border-radius: 50%;
+    }
+
+}
+@media screen and (max-width:767px){
+.gallery{
+  min-width:320px;
+  }
+
+
+}
+@media screen and (max-width:545px){
+  .gallery-slider__item-title,
+.gallery-slider__item_2-title{
+  font-size: 22px;
+  margin-top: 80px;
+  width: 290px;
+  
+  min-height: 100px;
+}
+.gallery-slider__item-text{
+  width: 290px;
+}
+ .gallery-slider__item{
+    padding-left: 5%;
+    
+  }
 }

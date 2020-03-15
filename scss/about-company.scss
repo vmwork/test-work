@@ -57,6 +57,7 @@ background-image: url(../img/investing.jpg);
 background-image: url(..//img/cash.svg);
 background-repeat: no-repeat;
 background-position: 50% 50%;
+	right: 160px;
 }
 .about-company__do-work:after{
 	background-image: url(..//img/work.svg);
@@ -70,6 +71,7 @@ background-position: 50% 50%;
 	padding-top: 54px;
 	text-align: center;
 	font-size: 18px;
+	color: #282828;
 }
 .about-company__main-container{
 	margin-top: 45px;
@@ -91,16 +93,14 @@ background-position: 50% 50%;
 .about-company__main-container-social:before{
 	position: absolute;
 	content: "";
-
-	
 	z-index: 10;
 }
 .about-company__main-container-company:before{
 	background-image: url(..//img/files-and-folders.svg);
-top: 47px;
+top: 48px;
 	width:46px;
 	height: 46px;
-	right: 160px;
+	right: 162px;
 }
 .about-company__main-container-reviews:before{
 	background-image: url(..//img/review.svg);
@@ -112,8 +112,81 @@ top: 47px;
 .about-company__main-container-social:before{
 		background-image: url(..//img/care-about-environment.svg);
 			top: 45px;
-			right: 155px;
+			right: 157px;
 	width:50px;
 	height: 46px;
 
+}
+@media screen and (max-width:1200px){
+
+	.about-company__do{
+	width: 768px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+.about-company__do-lern,
+.about-company__do-investing,
+.about-company__do-work{
+	position: relative;
+	width: 290px;
+	height: 243px;
+	color: #ffffff;
+	text-transform: uppercase;
+	font-size: 27px;
+	margin-top: 25px;
+
+}
+.about-company__main-container-company,
+.about-company__main-container-reviews,
+.about-company__main-container-social{
+
+	width: 250px;
+
+
+}
+
+.about-company__do-lern{
+	padding-left: 0;
+	text-align: center;
+}
+.about-company__do-investing{
+		padding-left: 0px;
+		text-align: center;
+}
+.about-company__do-work{
+			padding-left: 0px;
+			text-align: center;
+}
+.about-company__do-lern:after,
+.about-company__do-investing:after,
+.about-company__do-work:after{
+	position: absolute;
+	content: "";
+	width: 66px;
+	height: 66px;
+	background-color: #ffffff;
+	border-radius: 50%;
+	top: 65px;
+	right: 110px;
+	z-index: 10;
+}
+
+.about-company__main-container{
+	flex-direction: column;
+align-items: center;
+
+}
+.about-company__main-container-company:before,
+.about-company__main-container-reviews:before,
+.about-company__main-container-social:before{
+	right: 100px;
+}
+}
+@media screen and (max-width:767px){
+	.about-company__do{
+	width: 320px;
+}
 }

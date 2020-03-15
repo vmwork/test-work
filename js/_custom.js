@@ -215,3 +215,14 @@
       slideShow('.gallery-slider', {
         isAutoplay: true
       });
+
+      var burgerButtonContainer = document.querySelector('.main-header__burger-button');
+         var burgerButton = document.querySelector('.burger-button');
+         var mobileMenu = document.querySelector('.main-header__main-nav');
+         if (burgerButtonContainer){
+          burgerButtonContainer.addEventListener('click', openMenu)
+         }
+        function openMenu(){
+          burgerButton.classList.toggle('burger-button--rotate');
+          mobileMenu.classList.toggle('mobile-view');
+        }
